@@ -42,6 +42,7 @@ public class Movie {
 	
 	@ElementCollection
 	@CollectionTable(name = "movie_cast")
+	@Column(name= "the_cast")
 	private Set<String> cast;
 	
 	@Column(nullable = false)

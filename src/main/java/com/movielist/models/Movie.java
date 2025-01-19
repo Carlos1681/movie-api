@@ -42,11 +42,9 @@ public class Movie {
 	
 	@ElementCollection
 	@CollectionTable(name = "movie_cast")
-	@Column(name= "the_cast")
-	private Set<String> cast;
+	private Set<String> actorsCast;
 	
 	@Column(nullable = false)
-	@NotBlank(message = "Necessário adicionar um ano de lançamento para o filme!")
 	private Integer releaseYear;
 	
 	@Column(nullable = false)
